@@ -5,13 +5,9 @@ export default function TelaDois() {
   const navigation = useNavigation();
 
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
+    
+      
+    <View>
       <Button title="Navegar Botao" onPress={() => navigation.goBack()} />
       <Text>Tela Dois</Text>
     </View>
