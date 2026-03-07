@@ -1,9 +1,10 @@
-import { Link, useNavigation } from "expo-router";
+import { useNavigation } from "expo-router";
 import { Button, View } from "react-native";
 import { NativeStackNavigationProp } from "react-native-screens/lib/typescript/native-stack/types";
 
 type Screens = {
-  teladois: undefined;
+  telaadicao: undefined;
+  telasubtracao: undefined
 };
 
 type NavigationProps = NativeStackNavigationProp<Screens>;
@@ -20,10 +21,14 @@ export default function Index() {
       }}
     >
       <Button
-        title="Navegar Botao"
-        onPress={() => navigation.navigate("teladois")}
-      />
-      <Link href={"/teladois"}>Navegar</Link>
+        title="Adição"
+        onPress={() => navigation.navigate("telaadicao")}/>
+
+      <Button
+        title="Subtração"
+        onPress={() => navigation.navigate("telasubtracao")}/>
+
+        
     </View>
   );
 }

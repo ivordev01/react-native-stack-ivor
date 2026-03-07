@@ -3,8 +3,11 @@ import { Stack } from "expo-router";
 export default function RootLayout() {
   return (
     <Stack>
-      <Stack.Screen name="index" options={{ title: "Home" }} />
-      <Stack.Screen name="teladois" options={{ title: "TelaDois" }} />
+      <Stack.Screen name="Home" options={{ title: "home" }} />
+      <Stack.Screen name="Tela Adição" options={{ title: "TelaAdicao" }} />
     </Stack>
+
+
+  
   );
 }
