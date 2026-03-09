@@ -4,7 +4,9 @@ import { NativeStackNavigationProp } from "react-native-screens/lib/typescript/n
 
 type Screens = {
   telaadicao: undefined;
-  telasubtracao: undefined
+  telasubtracao: undefined;
+  telamultiplicacao: undefined;
+  teladivisao: undefined
 };
 
 type NavigationProps = NativeStackNavigationProp<Screens>;
@@ -20,15 +22,29 @@ export default function Index() {
         alignItems: "center",
       }}
     >
+      <View style={{ marginBottom: 20 }}>
       <Button
-        title="Adição"
-        onPress={() => navigation.navigate("telaadicao")}/>
-
+          title="Adição"
+          onPress={() => navigation.navigate("telaadicao")}/>
+      </View>
+     
+      <View style={{ marginBottom: 20 }}>
       <Button
         title="Subtração"
         onPress={() => navigation.navigate("telasubtracao")}/>
+      </View>
 
-        
+      <View style={{ marginBottom: 20 }}>
+      <Button 
+        title="Multiplicação"
+        onPress={() => navigation.navigate("telamultiplicacao")}/>
+      </View>
+
+      <View style={{ marginBottom: 20 }}>
+      <Button 
+        title="Divisão"
+        onPress={() => navigation.navigate("teladivisao")}/>
+      </View>
     </View>
   );
 }
