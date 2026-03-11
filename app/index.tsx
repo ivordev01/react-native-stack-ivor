@@ -69,7 +69,7 @@ const styles = StyleSheet.create
 
     backgroundImage:
     {
-      flex: 1,
+      ...StyleSheet.absoluteFillObject,
       opacity: 0.1,
     },
 
